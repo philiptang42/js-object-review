@@ -8,7 +8,7 @@ var spencer = {
 var spencer2 = new Object();
 spencer2.age = 22
 spencer2.country = "United States"
-
+---------------------------
 var snoopy = new Object();
 snoopy.species = "beagle";
 snoopy.age = 10;
@@ -19,3 +19,17 @@ var species = snoopy["species"];
 
 // use bracket notation for snoopy's age
 var age = snoopy.age
+---------------------
+// 3 lines required to make harry_potter
+var harry_potter = new Object();
+harry_potter.pages = 350;
+harry_potter.author = "J.K. Rowling";
+
+// A custom constructor for book
+function Book (pages, author) {
+    this.pages = pages;
+    this.author = author;
+}
+
+// Use our new constructor to make the_hobbit in one line
+var the_hobbit = new Book(320, "J.R.R. Tolkien");
